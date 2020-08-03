@@ -14,7 +14,7 @@ using namespace metal;
 constant int SCENEFUNC [[function_constant(0)]];
 //constant int SCENEFUNC = FORESTSCENE;
 constant int INCREMENTALRENDER = SCENEFUNC == FORESTSCENE;
-constant int REALTIMERENDER = !INCREMENTALRENDER;
+//constant int REALTIMERENDER = !INCREMENTALRENDER;
 
 #define GroundMaterial	{0, {.3,.8,.3}, .2, .2, 0, 0, .8}
 
@@ -118,7 +118,10 @@ bool lightSample(thread Ray &ray, Intersection hit, float3 k, float4 i, thread f
 	if (SCENEFUNC == FORESTSCENE) {
 		lightPosition = float3(-280,250,200)*2;
 		lightSize = 50;
-	}
+    } else {
+        lightPosition = float3(0,0,0);
+        lightSize = 0;
+    }
 	
 		// Get r to random point on light
 	float3 d = normalize(lightPosition + pointOnSphere(k.xy) * k.z * lightSize - ray.origin.xyz);
@@ -528,7 +531,7 @@ float2 df(float3 p, float3 dir) {
 	p.y -= .6;
 		//	p.xz = mod(p.xz, 20) - 10;
 		//	float2 d = leaf(p, {0,.1,0}, {5, 10}),e;
-	float h = 0;
+//	float h = 0;
 	for (int i=0; i<5; i++){ //5
 		e = leafLayer(p);
 			// Stencil anything ABOVE the leaf!

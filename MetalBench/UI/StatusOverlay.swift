@@ -16,7 +16,7 @@ struct StatusOverlay: View {
 				HStack {
 					Picker("GPU", selection: $renderer.selectedGPU) {
 						ForEach(0..<renderer.gpuList.count) { index in
-							Text(renderer.gpuList[index].uiDescription).tag(index)
+                            Text(self.renderer.gpuList[index].uiDescription).tag(index)
 						}
 					}
 					.frame(width: 400, height: nil, alignment: .center)
@@ -30,7 +30,7 @@ struct StatusOverlay: View {
 				HStack {
 					Picker("Scene", selection: $renderer.selectedScene) {
 						ForEach(0..<renderer.sceneList.count) { index in
-							Text(renderer.sceneList[index].name).tag(index)
+                            Text(self.renderer.sceneList[index].name).tag(index)
 						}
 					}
 					.frame(width: 400, height: nil, alignment: .center)
