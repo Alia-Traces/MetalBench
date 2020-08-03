@@ -42,6 +42,7 @@
 /* Begin PBXFileReference section */
 		2C53231A24D8577C005AFEB5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		2C53231B24D8579F005AFEB5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2C53231D24D85944005AFEB5 /* Screenshots */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Screenshots; sourceTree = "<group>"; };
 		833BAEF824D2E5BE00AC2D46 /* MetalBench.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalBench.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		833BAEFB24D2E5BE00AC2D46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		833BAEFD24D2E5BE00AC2D46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				2C53231B24D8579F005AFEB5 /* README.md */,
+				2C53231D24D85944005AFEB5 /* Screenshots */,
 				2C53231A24D8577C005AFEB5 /* .gitignore */,
 				833BAEFA24D2E5BE00AC2D46 /* MetalBench */,
 				833BAF1024D2E5C000AC2D46 /* MetalBenchTests */,
