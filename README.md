@@ -8,10 +8,10 @@ MetalBench contains several 3D scenes and utilises GPU compute shaders to render
 
 The app uses accurate GPU draw timing to calculate a Rays per Second value.
 
-![MetalBench running the Glass benchmark](Screenshots/Glass.jpeg)
+![MetalBench running the Glass benchmark](Screenshots/Glass.jpg)
 
 ## How to use
 
 Select a GPU and scene, and observe the Average Rays Per Second value at the bottom right. It's best to wait several minutes, as some scenes contain several views which affect rendering speed, and some GPUs become thermally constrained after a short time and will slow down.
 
-![MetalBench running the Forest Floor benchmark](Screenshots/Forest.jpeg)
+![MetalBench running the Forest Floor benchmark](Screenshots/Forest.jpg)
